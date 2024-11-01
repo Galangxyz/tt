@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "./public/download.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "../manifest.json",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/download",
+      "dest": "/public/download.html"
+    }
+  ]
+}
